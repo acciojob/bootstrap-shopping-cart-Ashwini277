@@ -1,16 +1,78 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Custom CSS for specific styles -->
+    <style>
+        .block-heading {
+            text-align: center;
+            color: #3b99e0;
+            margin-top: 20px;
+        }
+        .summary {
+            border-top: 5px solid #5ea4f3;
+            background-color: #f7fbff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .summary .btn {
+            background-color: #3b99e0;
+            color: white;
+            border: none;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
 
+<div class="container">
+    <div class="row">
+        <!-- Product Column -->
+        <div class="col-lg-8">
+            <div class="block-heading">
+                <h2>Your Shopping Cart</h2>
+            </div>
+            <div class="product">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="image1.jpg" class="img-fluid" alt="Product Image 1">
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="image2.jpg" class="img-fluid" alt="Product Image 2">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-lg-6">
+                        <img src="image3.jpg" class="img-fluid" alt="Product Image 3">
+                    </div>
+                    <div class="col-lg-6">
+                        <h4>Product Name</h4>
+                        <p>Description of the product goes here. This should include all relevant details about the product.</p>
+                        <p><strong>Price: $XX.XX</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Summary Column -->
+        <div class="col-lg-4">
+            <div class="summary">
+                <h4>Price Summary</h4>
+                <p>Subtotal: $XX.XX</p>
+                <p>Tax: $XX.XX</p>
+                <p>Total: $XX.XX</p>
+                <button class="btn btn-primary">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
-
 </html>
